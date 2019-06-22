@@ -6,6 +6,12 @@ body {
 h1 {
     border-bottom: 1px solid;
 }
+a {
+    color: aliceblue;
+}
+img {
+    display: block;
+}
 
 /* NAVBAR STYLES */
 nav {
@@ -36,7 +42,6 @@ nav a:hover {
     grid-gap: 0.7em;
 }
 #my_pic img {
-    display: block;
     height: 100%;
     width: 100%;
 }
@@ -53,14 +58,36 @@ nav a:hover {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* PROJECTS STYLES */
+#sudoku_container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+#sudoku img {
+    width: 70%;
+}
+#sudoku_container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 @media screen and (max-width: 785px) {
     #about {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
     }
     #pro_text {
-        display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
     }
+    #sudoku_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #sudoku_container ul {
+        display: block;
+    }
+    
 }
