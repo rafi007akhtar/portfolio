@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Oxygen&display=swap');
+
+body {
+   background-color: cadetblue;
+}
+h1 {
+    border-bottom: 1px solid;
+}
+
+/* NAVBAR STYLES */
+nav {
+    font-family: 'Abel';
+    font-size: 1.5em;
+    background-color: aliceblue;
+}
+nav ol {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav a {
+    color: cadetblue;
+    text-decoration: none;
+}
+nav a:hover {
+    color: darkgreen;
+}
+
+/* ABOUT ME STYLES */
+#about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0.7em;
+}
+#my_pic img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.section-text {
+    color: azure;
+    padding-left: 5px;
+    font-family: "Oxygen";
+}
+
+/* PROFESSION STYLES */
+#pro_text {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 785px) {
+    #about {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    #pro_text {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
