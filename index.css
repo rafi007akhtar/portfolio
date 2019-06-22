@@ -59,7 +59,7 @@ nav a:hover {
 }
 
 /* PROJECTS STYLES */
-#sudoku_container {
+#sudoku_container, #shell_container {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -72,6 +72,9 @@ nav a:hover {
     flex-direction: column;
     justify-content: space-around;
 }
+#shell_container img {
+    width: 70%;
+}
 
 @media screen and (max-width: 785px) {
     #about {
@@ -82,12 +85,18 @@ nav a:hover {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
     }
-    #sudoku_container {
+    #sudoku_container, #shell_container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
     #sudoku_container ul {
         display: block;
+    }
+    #sudoku img {
+        width: 100%;
+    }
+    #shell_container {
+        width: 100%;
     }
     
 }
