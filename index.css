@@ -34,12 +34,13 @@ nav a:hover {
     color: darkgreen;
 }
 
-/* ABOUT ME STYLES */
-#about {
+/* WELCOME STYLES */
+#welcome-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     grid-gap: 0.7em;
+    min-height:  height: 100vh;
 }
 #my_pic img {
     height: 100%;
@@ -77,7 +78,7 @@ nav a:hover {
 }
 
 @media screen and (max-width: 785px) {
-    #about {
+    #welcome-section {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
     }
