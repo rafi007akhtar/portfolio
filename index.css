@@ -67,7 +67,7 @@ nav a:hover {
 #sudoku img {
     width: 70%;
 }
-#sudoku_container ul {
+#sudoku_container ul, #shell_container ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -89,13 +89,13 @@ nav a:hover {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    #sudoku_container ul {
-        display: block;
+    #sudoku_container ul, #shell_container ul {
+        display: grid;
     }
     #sudoku img {
         width: 100%;
     }
-    #shell_container {
+    #shell_container img {
         width: 100%;
     }
     
