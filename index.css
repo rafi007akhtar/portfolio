@@ -65,7 +65,7 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
 }
 #sudoku img {
-    width: 70%;
+    width: 65%;
 }
 #sudoku_container ul, #shell_container ul {
     display: flex;
